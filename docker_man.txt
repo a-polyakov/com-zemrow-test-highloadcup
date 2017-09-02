@@ -1,0 +1,14 @@
+docker build -t dump .
+docker images
+docker run --rm -p 80:80 -v c:\tmp\data:/tmp/data -t dump
+docker run --rm -p 8080:80 -t stor.highloadcup.ru/travels/apolyakov_hl_test
+docker ps
+docker exec -it 423d200513bc  /bin/bash
+docker stop f3c39398dd9c
+docker rmi fd2378d8421b
+docker rmi 72d2be374029
+
+tail -40 lo
+
+docker tag dump stor.highloadcup.ru/travels/violet_seal
+docker push stor.highloadcup.ru/travels/violet_seal
